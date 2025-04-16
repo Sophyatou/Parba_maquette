@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParBa - Votre assistante pour la gestion des remplacements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Parba_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Parba_images/ParBa.png" alt="Logo ParBa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">A propos</a></li>
+                <li><a href="#partenaire">Partenaires</a></li>
+                <li><a href="#temoignage">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#connexion" class="btn btn-login">Connexion</a>
+            <a href="#inscription" class="btn btn-signup">Inscription</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p>Votre assistante !</p>
+                <h1>ParBa</h1>
+               <p>La gestion des remplacements est devenue un enjeu structurant pour les établissements sanitaires et médico-sociaux.</p>
+            </div>
+            <div class="hero-image">
+                <img src="Parba_images/Tech Life Remote Life.png" alt="Image d'accueil">
+            </div>
+        </div>
+        <div class="hero-buttons-wrapper">
+            <div class="hero-buttons">
+                <a href="#commencer" class="btn btn-primary">Commencer  <i class="fa-solid fa-cloud-arrow-up"></i></a>
+                <a href="#reseau" class="btn btn-secondary">Mon réseau  <i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="a-propos">
+        <h1>Parba</h1>
+        
+        <p>Face à l'absentéisme et ou l'accroissement temporaire d'activité imprévisible dans le temps, la gestion des remplacements est devenue un enjeu structurant pour les établissements sanitaires et médico-sociaux. Les outils actuels sont chronophages et peu efficients. Parba propose une solution digitale simple et efficace, adaptée aux besoins de toutes les structures.</p>
+        <p>ParBa a été pensé pour révolutionner la gestion des ressources humaines dans la santé. Cette solution de pilotage des absences et des remplacements de personnel, 100% en ligne permet aux établissements sanitaires et médico-sociaux de gérer leur personnel (agents, salariés et vacataires).</p>
+    </section>
+
+    <section id="partenaires">
+        <div class="section-divider"></div>
+        <h2>Nos partenaires</h2>
+    
+        <div class="carousel-wrapper">
+            <button class="carousel-btn left" onclick="scrollLogos(-1)">&#10094;</button>
+    
+            <div class="logo-carousel" id="logo-carousel">
+                <img src="Parba_images/BOOSTER LOGO.png" alt="Partenaire 1">
+                <img src="Parba_images/BOOSTER LOGO-2.png" alt="Partenaire 2">
+                <img src="Parba_images/Defarsci_logo.png" alt="Partenaire 3">
+ 
+            </div>
+    
+            <button class="carousel-btn right" onclick="scrollLogos(1)">&#10095;</button>
+        </div>
+        <h3>Ils nous font confiance !</h3>
+    </section>
+    
+
+    <section id="testimonials-section">
+        <div class="testimonial-slider">
+      
+          <!-- Flèche gauche -->
+          <button class="slider-arrow" id="prevBtn">&#8249;</button>
+      
+          <!-- Témoignage 1 -->
+          <div class="testimonial">
+            <img src="Parba_images/Ellipse 1.png" alt="Adams Smith" class="testimonial-img" />
+            <h3 class="testimonial-name">Adams Smith</h3>
+            <p class="testimonial-role">General manager</p>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id in posuere id leo, auctor aliquam feugiat fermentum.
+              Aliquam integer ullamcorper tortor ac quis tortor. Pulvinar nisl sed.
+            </p>
+          </div>
+      
+          <!-- Témoignage 2 -->
+          <div class="testimonial">
+            <img src="Parba_images/Ellipse 2.png" alt="Juliette Faye" class="testimonial-img" />
+            <h3 class="testimonial-name">Juliette Faye</h3>
+            <p class="testimonial-role">Self Care</p>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id in posuere id leo, auctor aliquam feugiat fermentum.
+              Aliquam integer ullamcorper tortor ac quis tortor. Pulvinar nisl sed.
+            </p>
+          </div>
+      
+          <!-- Flèche droite -->
+          <button class="slider-arrow" id="nextBtn">&#8250;</button>
+        </div>
+      
+        <!-- Barre décorative avant "Contact" -->
+        <div class="section-divider"></div>
+      
+        <!-- <Titre suivant -->
+        <h2 style="text-align: center; font-size: 2.5rem; color: #004d66; font-weight: 700;">Contact</h2> 
+      </section>
+    
+
+    <section id="contact">
+        
+        <form action="#" method="POST">
+            <div class="form-group"><input style=" font-family: 'Poppins';" type="text" name="name" placeholder="Nom complet" required></div>
+            <div class="form-group"><input  style=" font-family: 'Poppins';" type="text" name="structure" placeholder="Structure" required></div>
+            <div class="form-group"><input  style=" font-family: 'Poppins';" type="email" name="email" placeholder="Adresse mail" required></div>
+            <div class="form-group"><textarea  style=" font-family: 'Poppins';" name="message" placeholder="Message" required></textarea></div>
+            <button  style=" font-family: 'Poppins';" type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </section>
+
+
+    <footer class="site-footer fade-in">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>ParBa</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <br>Nunc auctor est et ultricies.
+              <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             <br> Nunc auctor est et ultricies.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>A Propos</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              <br>Euismod dignissim tortor nam tincidunt donec.
+              <br>Vulputate tortor nulla aliquam sed scelerisque.
+              <br>Nunc, diam vestibulum purus eu. Eu placerat vitae at.
+            </p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <div class="social-icons-center">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <p>COPYRIGHT 2021 | DEFAR Sci - Tout droit réservés</p>
+        </div>
+      
+        <div class="social-floating">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
